@@ -1,0 +1,86 @@
+.Register {
+    background-size: 300% 100% !important;
+    animation: move 10s ease infinite;
+    transform: translate3d(0, 0, 0);
+	background-color: #c2dde6;
+    height: 60vh
+
+}
+
+Navlink{
+	text-align: right;
+}
+
+.h1{
+    background: #c2dde6;
+    padding: 15px;
+}
+
+
+
+Button {
+    border-radius: 100px;
+	border: 2px solid #040100;
+	background-color: #29b1a2;
+	color: #FFFFFF;
+	font-size: 14px;
+	font-weight: bold;
+	padding: 12px 45px;
+	letter-spacing: 1x;
+	text-transform: uppercase;
+	transition: transform 80ms ease-in;
+}
+Button:active {
+	transform: scale(0.95);
+}
+
+Button:focus {
+	outline: none;
+}
+
+Button.ghost {
+	background-color: transparent;
+	border-color: #FFFFFF;
+
+}
+Form {
+    background-color: #FFFFFF;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	padding: 0px;
+	height: 100%;
+	text-align: center;
+}
+Input {
+	background-color: #eee;
+	border: none;
+	padding: 12px 15px;
+	margin: 8px 0;
+	width: 100%;
+}
+footer {
+    background-color:#c2dde6;
+    color: black;
+    font-size: 14px;
+    bottom: 0;
+    position: fixed;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 999;
+}
+
+footer p {
+    margin: 10px 0;
+}
+
+footer i {
+    color: red;
+}
+
+footer a {
+    color: #3c97bf;
+    text-decoration: none;
+}
