@@ -117,7 +117,7 @@ public class Main {
         @Override
         protected void configure(HttpSecurity httpSecurity) throws Exception {
             httpSecurity.csrf().disable()
-                    .authorizeRequests().antMatchers("/authenticate").permitAll().
+                    .authorizeRequests().antMatchers("/user", "/authenticate", "/desks").permitAll().
                     anyRequest().authenticated().and().
                     exceptionHandling().and().sessionManagement()
                     .sessionCreationPolicy(SessionCreationPolicy.STATELESS);
